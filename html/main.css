@@ -1,0 +1,65 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  word-break: break-word;
+}
+
+* body {
+  margin: 0 auto;
+  font-family: Lato, 'Hiragino Kaku Gothic Pro', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+}
+
+* body form {
+  width: 100%;
+}
+
+* body form .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* body form .container input {
+  margin: 0 auto;
+}
+
+* body form .container select {
+  margin: 0 auto;
+}
+
+* body form .container .select-btn {
+  margin-right: 30px;
+  margin-left: 30px;
+  height: 35px;
+  width: 35px;
+}
+
+* body form .container .equals-sign {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+* body form .cover {
+  margin: 30px 70px;
+}
+
+* body form .cover .calculation-btn {
+  margin: 0 auto;
+  width: 70px;
+  height: 40px;
+  text-align: center;
+}
+
+* body form .cover .clear-btn {
+  margin: 0 auto;
+  width: 70px;
+  height: 40px;
+  text-align: center;
+}
+/*# sourceMappingURL=main.css.map */
