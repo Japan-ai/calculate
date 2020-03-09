@@ -23,14 +23,14 @@
 </head>
 <body>
   <form action="index.php" method="post">
-      <input type="text" name ="num1" >
+      <input type="text" name ="num1" value="<?php echo $num1; ?> ">
       <select class="select-btn" name="operation" id="">
       <option value="+">+</option>
       <option value="-">-</option>
       <option value="x">×</option>
       <option value="÷">÷</option>
       </select>
-      <input type="text" name="num2">
+      <input type="text" name="num2" value="<?php echo $num2; ?>">
       <p>計算結果:<?php echo $result; ?> </p>
       <input class="calculation-btn" type="submit" value="計算する">
       <input class="clear-btn" type="reset" name="clear" value="クリア">
