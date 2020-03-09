@@ -4,8 +4,9 @@
     require_once(__DIR__ . '/functions.php');
     require_once(__DIR__ . '/Calculator.php');
 
-    $calculatorApp = new \MyApp\Calculator();//Todo.phpのTodoクラスを引っ張る、インスタンスの生成
-    $cal = $calculatorApp->create();//$todoAppインスタンスの中にgetAll() というメソッドを生成し、左辺に代入
+    $calculatorApp = new \MyApp\Calculator();
+    $cal = $calculatorApp->create();
+    $answer = $calculatorApp->result();
 ?>
 <!DOCTYPE html>
 <html lang="ja">
@@ -19,8 +20,7 @@
 <link rel="stylesheet" href="main.css">
 </head>
 <body>
-  <form action="calculator.php" method="post">
-    <div class="container">
+  <form action="index.php" method="post">
       <input type="text" name ="num1" >
       <select class="select-btn" name="operation" id="">
       <option value="+">+</option>
@@ -29,11 +29,9 @@
       <option value="÷">÷</option>
       </select>
       <input type="text" name="num2">
-      </div>
-    <div class="cover">
+      <p>計算結果:$answer</p>
       <input class="calculation-btn" type="submit" value="計算する">
       <input class="clear-btn" type="reset" name="clear" value="クリア">
-    </div>
   </form>
 </body>
 </html>

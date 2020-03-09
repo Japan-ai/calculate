@@ -1,7 +1,7 @@
 <?php
   namespace MyApp;
   class Calculator {
-    public function create() {//createというメソッドの生成
+    public function create() {//createメソッドの生成
       if(isset($_POST['num1']) && isset($_POST['num2'])){
         $num1 = $_POST['num1'];
         $num2 = $_POST['num2'];
@@ -21,8 +21,10 @@
           $answer = $num1/$num2;
             break;
         }
-      print  "計算結果:".($num1.$ope.$num2."=".$answer);
       }
+    }
+    public function result(){//resultメソッドの生成
+      $answer = calc($num1.$ope.$num2);
     }
   }
 ?>
