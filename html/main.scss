@@ -9,43 +9,31 @@ word-break: break-word;
   font-weight: 400;
   font-size: 14px;
   letter-spacing: 0.05em;
+    #error{
+      color: rgb(238, 45, 45);
+    }
     form{
       width: 100%;
-      .container{
-        display: flex;
-        align-items: center;
-        input{
-          margin: 0 auto;
-        }//input
-        select{
-          margin: 0 auto;
-        }//select
-        .select-btn {
-          margin-right: 30px;
-          margin-left: 30px;
-          height: 35px;
-          width: 35px;
-        }  //select-btn
-        .equals-sign {
-          margin-right: 20px;
-          margin-left: 20px;
-        }//equals-sign
-      } //container
-      .cover{
-        margin: 30px 70px;
+      .select-btn {
+        margin-right: 30px;
+        margin-left: 30px;
+        height: 35px;
+        width: 35px;
+      }  //select-btn
+      .equals-sign {
+        margin-right: 20px;
+        margin-left: 20px;
+      }//equals-sign
         .calculation-btn {
-          margin: 0 auto;
           width: 70px;
           height: 40px;
           text-align: center;
         }//calculation-btn
         .clear-btn {
-          margin: 0 auto;
           width: 70px;
           height: 40px;
           text-align: center;
         }//clear-btn
-      }//cover
     }//form
   }//body
 }//*

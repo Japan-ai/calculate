@@ -12,52 +12,33 @@
   letter-spacing: 0.05em;
 }
 
+* body #error {
+  color: #ee2d2d;
+}
+
 * body form {
   width: 100%;
 }
 
-* body form .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-* body form .container input {
-  margin: 0 auto;
-}
-
-* body form .container select {
-  margin: 0 auto;
-}
-
-* body form .container .select-btn {
+* body form .select-btn {
   margin-right: 30px;
   margin-left: 30px;
   height: 35px;
   width: 35px;
 }
 
-* body form .container .equals-sign {
+* body form .equals-sign {
   margin-right: 20px;
   margin-left: 20px;
 }
 
-* body form .cover {
-  margin: 30px 70px;
-}
-
-* body form .cover .calculation-btn {
-  margin: 0 auto;
+* body form .calculation-btn {
   width: 70px;
   height: 40px;
   text-align: center;
 }
 
-* body form .cover .clear-btn {
-  margin: 0 auto;
+* body form .clear-btn {
   width: 70px;
   height: 40px;
   text-align: center;
