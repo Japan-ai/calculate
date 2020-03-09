@@ -8,7 +8,11 @@
     $num1 = $_POST['num1'];
     $num2 = $_POST['num2'];
     $ope = $_POST['operation'];
-    $result = $calculatorApp->calc($ope,$num1,$num2);
+    if (is_numeric($num1) && is_numeric($num2)){
+      $result = $calculatorApp->calc($ope,$num1,$num2);
+    } else {
+      $error = '整数を入力して下さい。';
+    }
 ?>
 <!DOCTYPE html>
 <html lang="ja">
@@ -22,6 +26,7 @@
 <link rel="stylesheet" href="main.css">
 </head>
 <body>
+  <div id="error"><?php echo $error; ?></div>
   <form action="index.php" method="post">
       <input type="text" name ="num1" value="<?php echo $num1; ?> ">
       <select class="select-btn" name="operation" id="">

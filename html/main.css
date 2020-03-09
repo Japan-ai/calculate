@@ -12,6 +12,10 @@
   letter-spacing: 0.05em;
 }
 
+* body #error {
+  color: #ee2d2d;
+}
+
 * body form {
   width: 100%;
 }
